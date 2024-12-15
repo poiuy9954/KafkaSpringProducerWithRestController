@@ -1,0 +1,10 @@
+#spring.application.name=KafkaSpringProducerWithRestController
+spring:
+  application:
+    name: KafkaSpringProducerWithRestController
+  kafka:
+    bootstrap-servers: http://localhost:9092
+    producer:
+      acks: 1
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
